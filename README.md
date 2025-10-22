@@ -1,3 +1,5 @@
+![Compose Unstyled Android Boilerplate](art/hero.png)
+
 # Compose Unstyled Android Boilerplate
 
 Get started with Compose Unstyled and Jetpack Compose in seconds.
