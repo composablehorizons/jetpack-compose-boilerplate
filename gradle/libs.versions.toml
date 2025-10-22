@@ -1,0 +1,32 @@
+[versions]
+unstyled = "1.46.1"
+lucide = "1.0.0"
+ripple = "1.0.0"
+
+# compose
+compose = "1.9.3"
+
+#kotlin
+kotlin = "2.2.20"
+
+# android specific
+agp = "8.11.2"
+android-minSdk = "24"
+android-compileSdk = "36"
+android-targetSdk = "36"
+androidx-activity = "1.11.0"
+
+[libraries]
+composables-composeunstyled = { module = "com.composables:core", version.ref = "unstyled" }
+composables-ripple = { module = "com.composables:ripple-indication", version.ref = "ripple" }
+composables-icons-lucide = { module = "com.composables:icons-lucide", version.ref = "lucide" }
+
+compose-runtime = { module = "androidx.compose.runtime:runtime", version.ref = "compose" }
+compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
+compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
+androidx-activitycompose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activity" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+jetbrains-compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
