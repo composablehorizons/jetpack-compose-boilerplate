@@ -47,7 +47,10 @@ dependencies {
     implementation(libs.compose.runtime)
     implementation(libs.compose.foundation)
     implementation(libs.compose.ui)
+    implementation(libs.compose.ui.preview)
     implementation(libs.composables.composeunstyled)
     implementation(libs.composables.icons.lucide)
     implementation(libs.composables.ripple)
+
+    debugImplementation(libs.compose.ui.tooling)
 }
