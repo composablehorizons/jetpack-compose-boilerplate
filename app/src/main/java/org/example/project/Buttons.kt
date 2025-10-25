@@ -8,8 +8,10 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.composeunstyled.Button
+import com.composeunstyled.Text
 import com.composeunstyled.focusRing
 import com.composeunstyled.minimumInteractiveComponentSize
 import com.composeunstyled.outline
@@ -52,5 +54,25 @@ fun GhostButton(onClick: () -> Unit, modifier: Modifier = Modifier, content: @Co
         verticalAlignment = Alignment.CenterVertically,
     ) {
         content()
+    }
+}
+
+@Preview
+@Composable
+private fun PrimaryButtonPreview() {
+    AppTheme {
+        PrimaryButton(onClick = {}) {
+            Text("Primary Button")
+        }
+    }
+}
+
+@Preview
+@Composable
+private fun GhostButtonPreview() {
+    AppTheme {
+        GhostButton(onClick = {}) {
+            Text("Ghost Button")
+        }
     }
 }
