@@ -23,6 +23,7 @@ import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.withStyle
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.composables.icons.lucide.ArrowRight
 import com.composables.icons.lucide.FileText
@@ -94,4 +95,10 @@ fun App() {
             }
         }
     }
+}
+
+@Preview
+@Composable
+private fun AppPreview() {
+    App()
 }
